@@ -15,14 +15,14 @@ void move_mouse(int *scr);
 
 enum _ {W, H};
 
-int main(void) {
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
     srand(time(0)); // set seed
 
     int scr[2];
     int *pScr = &scr[0];
     get_res(pScr);
 
-    printf("%ix%i\n", scr[W], scr[H]);
+    //printf("%ix%i\n", scr[W], scr[H]);
 
     POINT pnt;
     POINT *pPnt = &pnt;
